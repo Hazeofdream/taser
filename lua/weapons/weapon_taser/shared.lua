@@ -128,7 +128,7 @@ function SWEP:PrimaryAttack()
     }
 
 	self:GetOwner():LagCompensation(true)
-    local trace = util.TraceHull(taserTrace)
+	local trace = util.TraceHull(taserTrace)
 	self:GetOwner():LagCompensation(false)
 
 	local ply = trace.Entity
